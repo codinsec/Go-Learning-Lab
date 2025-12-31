@@ -1,32 +1,102 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+## Special Folders
+roadmap.md
+
+## Cursor IDE
+.cursor/
+*.cursor
+.cursorrules
+
+## IDE & Editor Files
+.vscode/
+*.code-workspace
+.idea/
+*.swp
+*.swo
+*~
+
+## Go Build Artifacts
+# Binaries
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+bin/
+dist/
 
 # Test binary, built with `go test -c`
 *.test
 
-# Code coverage profiles and other test artifacts
+# Output of the go coverage tool
 *.out
-coverage.*
-*.coverprofile
-profile.cov
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
+coverage.html
+coverage.txt
 
 # Go workspace file
 go.work
 go.work.sum
 
-# env file
-.env
+## Go Dependencies
+vendor/
 
-# Editor/IDE
-# .idea/
-# .vscode/
+## Go Module Cache (if using local cache)
+# Uncomment if you want to ignore local module cache
+# pkg/
+
+## Build & Output Directories
+build/
+output/
+target/
+*.a
+
+## Logs
+*.log
+logs/
+*.log.*
+
+## OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+## Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+## Environment & Config
+.env
+.env.local
+.env.*.local
+*.local
+
+## Documentation Build
+docs/_build/
+site/
+
+## Profiling & Debugging
+*.prof
+*.pprof
+*.trace
+debug
+
+## Docker
+.dockerignore
+docker-compose.override.yml
+
+## Comments & Notes (Exclude from Git)
+*.notes
+*.todo
+Notes.md
+notes.md
+TODO.md
+todo.md
+COMMENTS.md
+comments.md
